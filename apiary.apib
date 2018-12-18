@@ -62,7 +62,32 @@ Polls is a simple API allowing consumers to view polls and vote in them.
             "name": "Marry",
             "age": 25
         }
-            
+
+## Search customers [/customers/Search]
+
+### Search customers [POST]
+
++ Request (application/json)
+
+        {
+            "searchCriteria": "1"
+        }
+        
++ Response 200 (application/json)
+
+        [
+            {
+                "id": 1,
+                "name": "John",
+                "age": 21
+            },
+            {
+                "id": 2,
+                "name": "Marry",
+                "age": 25
+            }
+        ]
+
 ## Questions Collection [/questions]
 
 ### List All Questions [GET]
